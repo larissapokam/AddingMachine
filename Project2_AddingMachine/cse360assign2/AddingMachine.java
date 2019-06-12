@@ -13,12 +13,18 @@ package cse360assign2;
 public class AddingMachine {
 
 	/**
-	 * Represents the total for all operation
+	 * Represents the total used in all operation
 	 */
 	
 	private int total;
 	
+	
+	/**
+	 * uses to record history of all operation
+	 */
+	
 	private String history = "";
+	
 	
 	/**
 	 * Class constructor.
