@@ -18,6 +18,8 @@ public class AddingMachine {
 	
 	private int total;
 	
+	private String history = "";
+	
 	/**
 	 * Class constructor.
 	 * @param no parameter value.
@@ -25,6 +27,7 @@ public class AddingMachine {
 	
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+		history = history + total;
 	}
 	
 	
@@ -35,7 +38,7 @@ public class AddingMachine {
 	 */
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	
@@ -46,7 +49,8 @@ public class AddingMachine {
 	 */
 	
 	public void add (int value) {
-		
+		total = total + value;
+		history = history + " + " + value;
 	}
 	
 	
@@ -57,7 +61,8 @@ public class AddingMachine {
 	 */
 	
 	public void subtract (int value) {
-		
+		total = total - value;
+		history = history + " - " + value;
 	}
 	
 	
@@ -68,7 +73,7 @@ public class AddingMachine {
 	 */
 	
 	public String toString () {
-		return "";
+		return history;
 	}
 
 
