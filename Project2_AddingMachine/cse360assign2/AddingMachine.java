@@ -2,7 +2,7 @@ package cse360assign2;
 
 /**
  * AddingMachine ---- class that acts as a simple calculator
- * 		while keeping a history of the transactions and returned as a string
+ * 		while keeping a history of the transactions and return it as a string
  * @author  Larissa Pokam Epse Takou Kuitche
  * CSE 360, Summer 2019
  * Assignment 2
@@ -84,12 +84,13 @@ public class AddingMachine {
 
 
 	/**
-	 * The clear method erased a history of the transactions. 
+	 *  Reset the total to 0 and the string to an empty string. 
 	 * @param  No parameter value.
 	 * @return No parameter value.
 	 */
 	
-	public void clear() {
-	
+	public void clear() {	
+		total = 0;
+		history = "";
 	}
 }
